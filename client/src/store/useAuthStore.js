@@ -3,7 +3,7 @@ import axios from 'axios';
 import { getRedirectPath } from '../utils/getRedirectPath';
 
 // Configure Axios defaults
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'https://pos-2ufp.onrender.com';
 
 const useAuthStore = create((set, get) => ({
   user: JSON.parse(localStorage.getItem('user') || 'null'),
